@@ -31,6 +31,9 @@ def check_if_mp4_and_convert_it_to_mp3(filename, output_folder):
 def match_target_amplitude(sound, target_dBFS):
     change_in_dBFS = target_dBFS - sound.dBFS
     print(f"Difference in dBFS: {change_in_dBFS}")
+    if abs(change_in_dBFS) < 0.1:  # If change is negligible, do not apply gain
+        print(f"No significant change needed for {sound}")
+        return sound, change_in_dBFS
     return sound.apply_gain(change_in_dBFS), change_in_dBFS
 
 def process_and_normalize_the_file(filename, folder_path, target_dBFS):
