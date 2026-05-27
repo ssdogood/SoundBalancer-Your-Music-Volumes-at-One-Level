@@ -1,6 +1,6 @@
 # SoundBalancer-Your-Music-Volumes-at-One-Level
 
-This original program was written by Pedram Porbaha and he can be contacted at p.porbaha@gmail.com. His repo is pporbaha/SoundBalancer-Your-Music-Volumes-at-One-Level. This is a fork from that repo. 
+This original program was written by Pedram Porbaha and his repo is pporbaha/SoundBalancer-Your-Music-Volumes-at-One-Level. This is a fork from that repo. 
 ## Overview
 This Python utility addresses the common issue of varying audio levels in music collections. It normalizes the volume of MP3 and MP4 files to a consistent level, making it ideal for listeners who wish to enjoy their music without the need to manually adjust the volume for each track.
 
